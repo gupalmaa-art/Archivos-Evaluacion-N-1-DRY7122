@@ -1,0 +1,69 @@
+b.1
+tienes que estar parado en documentos
+nano presentacion.py
+
+print("Evaluación N°1 Programación y Redes Virtualizadas\n")
+
+print("Ingrese los nombres de los integrantes:\n")
+
+integrante1 = input("Integrante 1: ")
+integrante2 = input("Integrante 2: ")
+integrante3 = input("Integrante 3: ")
+
+print("\n--- Integrantes del grupo ---")
+print("- " + integrante1)
+print("- " + integrante2)
+print("- " + integrante3)
+
+python3 presentacion.py (con estos imprimes)
+
+b.2
+cd ~/Documentos
+nano datos_personales.py
+
+nombre = input("nombre: ")
+apellido = input("apellido: ")
+codigo_seccion = input("seccion: ")
+sede = input("sede: ")
+
+print("\n--- Datos ingresados ---")
+print("Nombre:", nombre)
+print("Apellido:", apellido)
+print("Código-sección:", codigo_seccion)
+print("Sede:", sede)
+
+python3 datos_personales.py
+
+
+
+b.3
+cd ~/Documentos
+pwd
+nano acl_ipv4.py
+print("Clasificador de ACL IPv4\n")
+
+acl = input("Ingrese el número de ACL: ")
+
+if acl.isdigit():
+    acl = int(acl)
+
+    if (1 <= acl <= 99) or (1300 <= acl <= 1999):
+        print("\nResultado: La ACL es ESTÁNDAR")
+
+    elif (100 <= acl <= 199) or (2000 <= acl <= 2699):
+        print("\nResultado: La ACL es EXTENDIDA")
+
+    else:
+        print("\nResultado: El número no corresponde a una ACL válida")
+
+else:
+    print("\nError: Debe ingresar solo números")
+	
+	
+despues del nano
+
+ls -l acl_ipv4.py
+cat acl_ipv4.py
+python3 acl_ipv4.py (para imprimir)
+
+
